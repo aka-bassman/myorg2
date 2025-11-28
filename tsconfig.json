@@ -13,14 +13,32 @@
     "importHelpers": false,
     "target": "es2022",
     "module": "esnext",
-    "types": ["node", "vite/client", "jest"],
-    "lib": ["es2022", "dom", "webworker"],
+    "types": [
+      "node",
+      "vite/client",
+      "jest"
+    ],
+    "lib": [
+      "es2022",
+      "dom",
+      "webworker"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "strictNullChecks": true,
     "baseUrl": ".",
     "jsx": "preserve",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "@koyo/*": [
+        "apps/koyo/*"
+      ]
+    }
   },
-  "exclude": ["**/node_modules", "tmp", "**/ios", "**/android"]
+  "exclude": [
+    "**/node_modules",
+    "tmp",
+    "**/ios",
+    "**/android"
+  ]
 }

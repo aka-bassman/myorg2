@@ -1,0 +1,2 @@
+
+export { UiComponent } from "./UiComponent";

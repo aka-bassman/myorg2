@@ -9,50 +9,50 @@ importers:
   .:
     dependencies:
       '@akanjs/base':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1
       '@akanjs/cli':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(@types/babel__core@7.20.5)(@types/node@22.19.1)(@types/react@19.2.0)(lightningcss@1.30.2)(openai@5.23.2(ws@8.18.3)(zod@3.25.76))(react-devtools-core@6.1.5)(react-dom@19.2.0(react@19.2.0))(rollup@2.79.2)(terser@5.44.1)(webpack@5.103.0)(ws@8.18.3)(yaml@2.8.1)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@babel/core@7.28.5)(@playwright/test@1.57.0)(@types/babel__core@7.20.5)(@types/node@22.19.1)(@types/react@19.2.0)(lightningcss@1.30.2)(openai@5.23.2(ws@8.18.3)(zod@3.25.76))(react-devtools-core@6.1.5)(react-dom@19.2.0(react@19.2.0))(rollup@2.79.2)(terser@5.44.1)(webpack@5.103.0)(ws@8.18.3)(yaml@2.8.1)
       '@akanjs/client':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))
       '@akanjs/common':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1
       '@akanjs/config':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(lightningcss@1.30.2)(next@16.0.3(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(prettier@3.6.2)(react@19.2.0)(tailwindcss@4.1.17)(terser@5.44.1)(ts-node@10.9.2(@types/node@22.19.1)(typescript@5.8.3))(webpack@5.103.0)(yaml@2.8.1)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@babel/core@7.28.5)(@types/babel__core@7.20.5)(lightningcss@1.30.2)(next@16.0.3(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(prettier@3.6.2)(react@19.2.0)(tailwindcss@4.1.17)(terser@5.44.1)(ts-node@10.9.2(@types/node@22.19.1)(typescript@5.8.3))(webpack@5.103.0)(yaml@2.8.1)
       '@akanjs/constant':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1
       '@akanjs/dictionary':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1
       '@akanjs/document':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1
       '@akanjs/nest':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/core@10.4.20)(@nestjs/websockets@10.4.20)(graphql@16.12.0)(passport@0.7.0)(socket.io-adapter@2.5.5)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/core@10.4.20)(@nestjs/websockets@10.4.20)(graphql@16.12.0)(passport@0.7.0)(socket.io-adapter@2.5.5)
       '@akanjs/next':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)
       '@akanjs/server':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/platform-socket.io@10.4.20)(bull@4.16.5)(passport@0.7.0)(reflect-metadata@0.2.2)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/platform-socket.io@10.4.20)(bull@4.16.5)(passport@0.7.0)(reflect-metadata@0.2.2)
       '@akanjs/service':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@nestjs/core@10.4.20)(mongoose@8.20.1)(rxjs@7.8.2)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@nestjs/core@10.4.20)(mongoose@8.20.1)(rxjs@7.8.2)
       '@akanjs/signal':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@babel/core@7.28.5)(@playwright/test@1.57.0)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@akanjs/store':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@types/react@19.2.0)(immer@10.2.0)(use-sync-external-store@1.6.0(react@19.2.0))
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@types/react@19.2.0)(immer@10.2.0)(use-sync-external-store@1.6.0(react@19.2.0))
       '@akanjs/ui':
-        specifier: 0.9.60-canary.0
-        version: 0.9.60-canary.0(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)(@react-three/fiber@9.4.0(@types/react@19.2.0)(immer@10.2.0)(react-dom@19.2.0(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react@19.2.0)(three@0.181.2))(@types/react-dom@19.2.0(@types/react@19.2.0))(@types/react@19.2.0)(konva@10.0.12)(react-konva@18.2.14(@types/react@19.2.0)(konva@10.0.12)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react-zdog@1.2.2)(three@0.181.2)(zdog@1.1.3)
+        specifier: 0.9.60-canary.1
+        version: 0.9.60-canary.1(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)(@react-three/fiber@9.4.0(@types/react@19.2.0)(immer@10.2.0)(react-dom@19.2.0(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react@19.2.0)(three@0.181.2))(@types/react-dom@19.2.0(@types/react@19.2.0))(@types/react@19.2.0)(konva@10.0.12)(react-konva@18.2.14(@types/react@19.2.0)(konva@10.0.12)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react-zdog@1.2.2)(three@0.181.2)(zdog@1.1.3)
       daisyui:
         specifier: ^5.5.5
         version: 5.5.5
@@ -164,77 +164,77 @@ packages:
       graphql:
         optional: true
 
-  '@akanjs/base@0.9.60-canary.0':
-    resolution: {integrity: sha512-vESzdx9DC4I1i8STXjoKhcHRFDxJv1pZZV7HapW+XA/2kLDhUZ3SZRh8jE0KP4DJ7AyFMnzSRg879S/pkzTRdA==}
+  '@akanjs/base@0.9.60-canary.1':
+    resolution: {integrity: sha512-KzCPZ7PE5kOcYknhyhcztWjyWroxdP+wDfFq538a3lKw3HLoviHCU7tywKtDIxtz84HsaTTJEUpAdjU2bPieig==}
     engines: {node: '>=20'}
 
-  '@akanjs/cli@0.9.60-canary.0':
-    resolution: {integrity: sha512-Hf6d1lkhaZi6h9OpYKoPH2xZ3+WnbEhfqBo7OeOwiSUfJKECMKN2bHQpobbMGipqJ/oP0dmsb0UiackSq4W1rg==}
+  '@akanjs/cli@0.9.60-canary.1':
+    resolution: {integrity: sha512-TfX2H6DSOjfiG8+KYda1K7TEHXeA1CA1ONv4w3bwUNMpbr2iUTc3ntVVQJ22ZfUG/RYaTOX7YzOt9Ga/YlZUaA==}
     engines: {node: '>=20'}
     hasBin: true
 
-  '@akanjs/client@0.9.60-canary.0':
-    resolution: {integrity: sha512-KyB7mXvlMv6hHdq0YlK5EbFchTs+2+JxvhtQ0v6fcXnwZDNlQ4zu2xTS09byF4LdGrntUkJht+T/lQFq9lNBZA==}
+  '@akanjs/client@0.9.60-canary.1':
+    resolution: {integrity: sha512-UGdyRFeGptO851JPXXTaEuOszMKY5XwErq4Q6k528AYuFWSSJfQfbUMvFSM0ZoGd8uNdS2kVmnqjeBaJO3UJ5g==}
     engines: {node: '>=20'}
 
-  '@akanjs/common@0.9.60-canary.0':
-    resolution: {integrity: sha512-bK4j49z/zE1Hsjkam0c2N99IapV7P7j8jPIfQtSuRwKmHElEX1B20uv1s5I+KYmbySVaY2wWbHYWVtyIZagEFg==}
+  '@akanjs/common@0.9.60-canary.1':
+    resolution: {integrity: sha512-JZtIa56LE0FZGBVXgxgEAi854dQ4hDnMTVXSW0TMIdf/XHNDM7wRfTISnTLZxK5rjB7pOAcNFyOKzXCzEf61yg==}
     engines: {node: '>=20'}
 
-  '@akanjs/config@0.9.60-canary.0':
-    resolution: {integrity: sha512-M3IMwyUffoxKRYkgjG96k4ZZaWcDFyS5kOhgnvzloQZDz+kXdjWShihuvvXfTs8XJOEdubluw3IyNoB14JCRZA==}
+  '@akanjs/config@0.9.60-canary.1':
+    resolution: {integrity: sha512-2sEX9ldU/aQ5BAL9CPWuyp++qBj+z3fXxlTRU+X2TEsqP2PZMdqlsSW2FUqevCcONRTYJYxNbQTvt8k55ATW+A==}
     engines: {node: '>=20'}
 
-  '@akanjs/constant@0.9.60-canary.0':
-    resolution: {integrity: sha512-uRwPTHGGgYYVu1/+31Sgb7AulkkUrEaVc0RGfhfGNsIb4fkRJiwTtfST4uLH/FmR/nTFjmGzVgDz+5F8qyOxag==}
+  '@akanjs/constant@0.9.60-canary.1':
+    resolution: {integrity: sha512-rmtV0Xv+JqNGwixjr2QxnXA27fN7vh0n/t4fioIFfC23fQwWSD9RFl2MAdD/DzAKnnaIctnffhOu47XdEjefWw==}
     engines: {node: '>=20'}
 
   '@akanjs/devkit@0.9.60-canary.0':
     resolution: {integrity: sha512-G0ZsI6FMKzQn/yLx6j+2MdMqNMlVzwCBQnESd3dmiqULc5u7yc5Qyp0SlhJ58ighwQyD9uBQmEriDLzcbVXeag==}
     engines: {node: '>=20'}
 
-  '@akanjs/dictionary@0.9.60-canary.0':
-    resolution: {integrity: sha512-/TveqQSZwOJwbSmAIYfJpvsELGj36sn4VEJLjPaxNGRr76H7lSMwcTLeVtL+VAW5ijBwkUFhGYAcFBadTQt0CA==}
+  '@akanjs/dictionary@0.9.60-canary.1':
+    resolution: {integrity: sha512-6CZ3W97i2D1XnPBIrLDtxFM9wpLRm6k0vW60i2IYXL1On4mqKJq69liQKJsQ3aamyBRliyzdJx24RZmHCWCagg==}
     engines: {node: '>=20'}
 
-  '@akanjs/document@0.9.60-canary.0':
-    resolution: {integrity: sha512-RC4Yqqlm9tBSp5ZfU/RAWHTn41hIY3TZs2qBmWupY8HzLYvAvWeSSC2gzWaxJShphjKuja/x6jFNyTEPEQB5QQ==}
+  '@akanjs/document@0.9.60-canary.1':
+    resolution: {integrity: sha512-Dj42ExOb6KcTPpTm+nfXMd1SGS7DPqEP6Q2SH811ly3YaNFwEVC93lHRJe+4OC/Sgr/EI4um3r80NR9jGfuZAw==}
     engines: {node: '>=20'}
 
   '@akanjs/lint@0.9.60-canary.0':
     resolution: {integrity: sha512-zw5MBpRPKqcvVcvWWVPftUXzBjZ59VdgM4vYP4zPQVj1Sg6SonKl7+H2ELBM+ax4yN+CNdI6O1G0RUIwKxlxnQ==}
     engines: {node: '>=20'}
 
-  '@akanjs/nest@0.9.60-canary.0':
-    resolution: {integrity: sha512-dp9iHs3FeT69Tpm3+R91ZjAm38m92j6aFPo6Is1TNVXVXGO/pZrY+44iuvQCBO6W94sjk36GfjgRZ9XqcLiAYg==}
+  '@akanjs/nest@0.9.60-canary.1':
+    resolution: {integrity: sha512-5Xt67//+O0dT7tP8+EF6tfG4zMiG4FkGyoJVO68dVtWZy0GwP6zEkUIlSUi8mZT2z+UZm1ximLUP4adgXWk8ig==}
     engines: {node: '>=20'}
 
-  '@akanjs/next@0.9.60-canary.0':
-    resolution: {integrity: sha512-VPdKAmuJFLIxkMrYp/uQ+HR49AXWm+2aGi2oQ3Xr07Ix5iXYDnmr6xDOQJye0TC5c4wsiMxhNtNAbu5J0I4Grw==}
+  '@akanjs/next@0.9.60-canary.1':
+    resolution: {integrity: sha512-RZaNTP8WMtDHCA4qykv7nXbexGK6U16vGycqqRA89cqnT6qVnw2n2drTpj4mAIqqXdpoDTFVQAExYw1/X6ggqQ==}
     engines: {node: '>=20'}
 
-  '@akanjs/server@0.9.60-canary.0':
-    resolution: {integrity: sha512-OEMctmUH1wW8BW3QRt/H8Qekngqgl8yZFnXdd1UQidS07VsS2T3zqEPci+Tb075H1eFmS9uTlkBXZpP4ipeoEQ==}
+  '@akanjs/server@0.9.60-canary.1':
+    resolution: {integrity: sha512-y6qxePPTXBEo/5p3zVHg78aRzitnaE1eX5Pl2wTx8ajJCZ1fpr7O3x6sQye3KxmB2YR9owbUf2sigaLmW5pD1A==}
     engines: {node: '>=20'}
 
-  '@akanjs/service@0.9.60-canary.0':
-    resolution: {integrity: sha512-aS/CJD02MOSnWtvlQ3hC5s/2m09Zc/3dkrsUk/qtWQARovjBdr4tS9F4IjCNFb49ZeRPTJ7TjJE4bmROeKw0mg==}
+  '@akanjs/service@0.9.60-canary.1':
+    resolution: {integrity: sha512-ODoxEZWHOhF3E6IUfoI1WKFNLdSaIbBXY74LchanCHlbrIRQWAMYzWbXJmfsu1P+euiNOym2jn30b5VMuLBQ0A==}
     engines: {node: '>=20'}
 
-  '@akanjs/signal@0.9.60-canary.0':
-    resolution: {integrity: sha512-nN/ezzoumyuXHAsdi/eqB9R5LIUKFfTGy7jVkq2c8PSbCqf5JsShzyUA4WwMPph3/fIqTUZxDa5VexHcXuzNNw==}
+  '@akanjs/signal@0.9.60-canary.1':
+    resolution: {integrity: sha512-AV/Jb5uub+d9S4gnxSTTJjNMJ0nCqQL/FEZ4ZUJATMIVRoHpWvd6lN3KB18LBoprXcGLV0drtEwCNKaM5TGESg==}
     engines: {node: '>=20'}
 
-  '@akanjs/store@0.9.60-canary.0':
-    resolution: {integrity: sha512-xnAxsJZkNxCVqYZj3cdLvL4nchn3PVqzoHrEg7Mlz8NLrN9z3cNh8fb0XvybHG+nR+1x/ZECKbQ2CTUkZumaJg==}
+  '@akanjs/store@0.9.60-canary.1':
+    resolution: {integrity: sha512-ywM0uAAhMSxWIUAJY/k7ifc7rPkhxSI4xuaGB388WI4DffAmV63hs5N2RZFidbh30110wnDPfmRiScwMTn0h1Q==}
     engines: {node: '>=20'}
 
   '@akanjs/test@0.9.60-canary.0':
     resolution: {integrity: sha512-Zr7KCVC42VJoaYPnd7WrFdMS/fKuz6nvE3O/tSz/4XQBbN6phYjaDwlZSOLtSIxblD8Zzx/k7d7ovBOeGPdq4w==}
     engines: {node: '>=20'}
 
-  '@akanjs/ui@0.9.60-canary.0':
-    resolution: {integrity: sha512-92kQ3hu72FWHRohwtZyN877a1/CfaeKWuzk4W+hCRdv9spllTITb6H2s55N3brzsvaFM5JzTxX9yZtC6Ghe1MA==}
+  '@akanjs/ui@0.9.60-canary.1':
+    resolution: {integrity: sha512-k2faVKEIWX2WGDoOa2bvExgYc6tOcGmhkG6m+1Dw0unCRwMgu+zkQogK/gkWRPfpwySgFe5VJpXKxwNfG1GkSQ==}
     engines: {node: '>=20'}
 
   '@alcalzone/ansi-tokenize@0.2.2':
@@ -9148,11 +9148,11 @@ snapshots:
     optionalDependencies:
       graphql: 16.12.0
 
-  '@akanjs/base@0.9.60-canary.0':
+  '@akanjs/base@0.9.60-canary.1':
     dependencies:
       dayjs: 1.11.19
 
-  '@akanjs/cli@0.9.60-canary.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(@types/babel__core@7.20.5)(@types/node@22.19.1)(@types/react@19.2.0)(lightningcss@1.30.2)(openai@5.23.2(ws@8.18.3)(zod@3.25.76))(react-devtools-core@6.1.5)(react-dom@19.2.0(react@19.2.0))(rollup@2.79.2)(terser@5.44.1)(webpack@5.103.0)(ws@8.18.3)(yaml@2.8.1)':
+  '@akanjs/cli@0.9.60-canary.1(@babel/core@7.28.5)(@playwright/test@1.57.0)(@types/babel__core@7.20.5)(@types/node@22.19.1)(@types/react@19.2.0)(lightningcss@1.30.2)(openai@5.23.2(ws@8.18.3)(zod@3.25.76))(react-devtools-core@6.1.5)(react-dom@19.2.0(react@19.2.0))(rollup@2.79.2)(terser@5.44.1)(webpack@5.103.0)(ws@8.18.3)(yaml@2.8.1)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@22.19.1)
       '@langchain/core': 0.3.79(openai@5.23.2(ws@8.18.3)(zod@3.25.76))
@@ -9171,6 +9171,7 @@ snapshots:
       esbuild-plugin-d.ts: 1.3.1(typescript@5.8.3)
       eslint: 9.39.1(jiti@2.6.1)
       form-data: 4.0.5
+      ignore: 7.0.5
       ink: 6.5.1(@types/react@19.2.0)(react-devtools-core@6.1.5)(react@19.2.0)
       jiti: 2.6.1
       js-yaml: 4.1.1
@@ -9228,7 +9229,7 @@ snapshots:
       - ws
       - yaml
 
-  '@akanjs/client@0.9.60-canary.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))':
+  '@akanjs/client@0.9.60-canary.1(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))':
     dependencies:
       '@capacitor/core': 7.4.2
       '@capacitor/device': 7.0.1(@capacitor/core@7.4.2)
@@ -9251,12 +9252,12 @@ snapshots:
       - react-dom
       - sass
 
-  '@akanjs/common@0.9.60-canary.0':
+  '@akanjs/common@0.9.60-canary.1':
     dependencies:
       dayjs: 1.11.19
       pluralize: 8.0.0
 
-  '@akanjs/config@0.9.60-canary.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(lightningcss@1.30.2)(next@16.0.3(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(prettier@3.6.2)(react@19.2.0)(tailwindcss@4.1.17)(terser@5.44.1)(ts-node@10.9.2(@types/node@22.19.1)(typescript@5.8.3))(webpack@5.103.0)(yaml@2.8.1)':
+  '@akanjs/config@0.9.60-canary.1(@babel/core@7.28.5)(@types/babel__core@7.20.5)(lightningcss@1.30.2)(next@16.0.3(@babel/core@7.28.5)(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(prettier@3.6.2)(react@19.2.0)(tailwindcss@4.1.17)(terser@5.44.1)(ts-node@10.9.2(@types/node@22.19.1)(typescript@5.8.3))(webpack@5.103.0)(yaml@2.8.1)':
     dependencies:
       '@capacitor/cli': 7.4.4
       '@next/bundle-analyzer': 16.0.4
@@ -9321,7 +9322,7 @@ snapshots:
       - webpack
       - yaml
 
-  '@akanjs/constant@0.9.60-canary.0':
+  '@akanjs/constant@0.9.60-canary.1':
     dependencies:
       immer: 10.2.0
       reflect-metadata: 0.2.2
@@ -9366,9 +9367,9 @@ snapshots:
       - utf-8-validate
       - ws
 
-  '@akanjs/dictionary@0.9.60-canary.0': {}
+  '@akanjs/dictionary@0.9.60-canary.1': {}
 
-  '@akanjs/document@0.9.60-canary.0':
+  '@akanjs/document@0.9.60-canary.1':
     dependencies:
       dataloader: 2.2.3
       lodash: 4.17.21
@@ -9416,7 +9417,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@akanjs/nest@0.9.60-canary.0(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/core@10.4.20)(@nestjs/websockets@10.4.20)(graphql@16.12.0)(passport@0.7.0)(socket.io-adapter@2.5.5)':
+  '@akanjs/nest@0.9.60-canary.1(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/core@10.4.20)(@nestjs/websockets@10.4.20)(graphql@16.12.0)(passport@0.7.0)(socket.io-adapter@2.5.5)':
     dependencies:
       '@nestjs/apollo': 12.2.2(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/common@10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.20)(@nestjs/graphql@12.2.2(@nestjs/common@10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.20)(graphql@16.12.0)(reflect-metadata@0.2.2))(graphql@16.12.0)
       '@nestjs/common': 10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -9465,7 +9466,7 @@ snapshots:
       - ts-morph
       - utf-8-validate
 
-  '@akanjs/next@0.9.60-canary.0(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)':
+  '@akanjs/next@0.9.60-canary.1(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)':
     dependencies:
       '@capacitor-community/contacts': 6.1.1(@capacitor/core@7.4.2)
       '@capacitor-community/fcm': 7.1.3(@capacitor/core@7.4.2)
@@ -9495,7 +9496,7 @@ snapshots:
       - debug
       - sass
 
-  '@akanjs/server@0.9.60-canary.0(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/platform-socket.io@10.4.20)(bull@4.16.5)(passport@0.7.0)(reflect-metadata@0.2.2)':
+  '@akanjs/server@0.9.60-canary.1(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/platform-socket.io@10.4.20)(bull@4.16.5)(passport@0.7.0)(reflect-metadata@0.2.2)':
     dependencies:
       '@nestjs/apollo': 12.2.2(@apollo/server@4.12.2(graphql@16.12.0))(@nestjs/common@10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.20)(@nestjs/graphql@12.2.2(@nestjs/common@10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.20)(graphql@16.12.0)(reflect-metadata@0.2.2))(graphql@16.12.0)
       '@nestjs/bull': 10.2.3(@nestjs/common@10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.20)(bull@4.16.5)
@@ -9544,7 +9545,7 @@ snapshots:
       - ts-morph
       - utf-8-validate
 
-  '@akanjs/service@0.9.60-canary.0(@nestjs/core@10.4.20)(mongoose@8.20.1)(rxjs@7.8.2)':
+  '@akanjs/service@0.9.60-canary.1(@nestjs/core@10.4.20)(mongoose@8.20.1)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/mongoose': 10.1.0(@nestjs/common@10.4.20(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@10.4.20)(mongoose@8.20.1)(rxjs@7.8.2)
@@ -9557,7 +9558,7 @@ snapshots:
       - rxjs
       - supports-color
 
-  '@akanjs/signal@0.9.60-canary.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@akanjs/signal@0.9.60-canary.1(@babel/core@7.28.5)(@playwright/test@1.57.0)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@urql/core': 5.2.0(graphql@16.12.0)
       immer: 10.2.0
@@ -9578,7 +9579,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@akanjs/store@0.9.60-canary.0(@types/react@19.2.0)(immer@10.2.0)(use-sync-external-store@1.6.0(react@19.2.0))':
+  '@akanjs/store@0.9.60-canary.1(@types/react@19.2.0)(immer@10.2.0)(use-sync-external-store@1.6.0(react@19.2.0))':
     dependencies:
       react: 19.2.0
       zustand: 5.0.8(@types/react@19.2.0)(immer@10.2.0)(react@19.2.0)(use-sync-external-store@1.6.0(react@19.2.0))
@@ -9618,7 +9619,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@akanjs/ui@0.9.60-canary.0(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)(@react-three/fiber@9.4.0(@types/react@19.2.0)(immer@10.2.0)(react-dom@19.2.0(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react@19.2.0)(three@0.181.2))(@types/react-dom@19.2.0(@types/react@19.2.0))(@types/react@19.2.0)(konva@10.0.12)(react-konva@18.2.14(@types/react@19.2.0)(konva@10.0.12)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react-zdog@1.2.2)(three@0.181.2)(zdog@1.1.3)':
+  '@akanjs/ui@0.9.60-canary.1(@babel/core@7.28.5)(@capacitor/core@7.4.2)(@playwright/test@1.57.0)(@react-three/fiber@9.4.0(@types/react@19.2.0)(immer@10.2.0)(react-dom@19.2.0(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react@19.2.0)(three@0.181.2))(@types/react-dom@19.2.0(@types/react@19.2.0))(@types/react@19.2.0)(konva@10.0.12)(react-konva@18.2.14(@types/react@19.2.0)(konva@10.0.12)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.0)(react@19.2.0))(react-zdog@1.2.2)(three@0.181.2)(zdog@1.1.3)':
     dependencies:
       '@capacitor/browser': 7.0.1(@capacitor/core@7.4.2)
       '@radix-ui/react-dialog': 1.1.14(@types/react-dom@19.2.0(@types/react@19.2.0))(@types/react@19.2.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
