@@ -1,4 +1,3 @@
-
 import {
   FaBolt,
   FaBook,
@@ -45,7 +44,7 @@ export default function Page() {
           </button>
         </div>
         <div className="mb-16 rounded-lg bg-slate-800 p-8">
-          <h2 className="text-gray-200 mb-6 text-center text-2xl font-bold">Quick Start</h2>
+          <h2 className="mb-6 text-center text-2xl font-bold text-gray-200">Quick Start</h2>
           <div className="mockup-code">
             <pre data-prefix="$">
               <code className="text-success">npx create-akan-workspace</code>
@@ -62,7 +61,7 @@ export default function Page() {
           <div className="card bg-slate-800">
             <div className="card-body p-6 text-center">
               <FaBook className="mx-auto mb-4 text-4xl text-purple-400" />
-              <h3 className="text-gray-200 mb-2 text-lg font-semibold">Documentation</h3>
+              <h3 className="mb-2 text-lg font-semibold text-gray-200">Documentation</h3>
               <p className="mb-4 text-sm text-gray-400">Complete API guides and tutorials</p>
               <button className="btn btn-sm w-full">Read Documentation</button>
             </div>
@@ -70,7 +69,7 @@ export default function Page() {
           <div className="card bg-slate-800">
             <div className="card-body p-6 text-center">
               <FaGraduationCap className="mx-auto mb-4 text-4xl text-blue-400" />
-              <h3 className="text-gray-200 mb-2 text-lg font-semibold">Learn</h3>
+              <h3 className="mb-2 text-lg font-semibold text-gray-200">Learn</h3>
               <p className="mb-4 text-sm text-gray-400">Step-by-step learning guides</p>
               <button className="btn btn-sm w-full">Learn</button>
             </div>
@@ -78,7 +77,7 @@ export default function Page() {
           <div className="card bg-slate-800">
             <div className="card-body p-6 text-center">
               <FaCode className="mx-auto mb-4 text-4xl text-green-400" />
-              <h3 className="text-gray-200 mb-2 text-lg font-semibold">Examples</h3>
+              <h3 className="mb-2 text-lg font-semibold text-gray-200">Examples</h3>
               <p className="mb-4 text-sm text-gray-400">Real project examples</p>
               <button className="btn btn-sm w-full">Examples</button>
             </div>
@@ -86,7 +85,7 @@ export default function Page() {
           <div className="card bg-slate-800">
             <div className="card-body p-6 text-center">
               <FaExternalLinkAlt className="mx-auto mb-4 text-4xl text-yellow-400" />
-              <h3 className="text-gray-200 mb-2 text-lg font-semibold">Official Site</h3>
+              <h3 className="mb-2 text-lg font-semibold text-gray-200">Official Site</h3>
               <p className="mb-4 text-sm text-gray-400">Visit our official website</p>
               <button className="btn btn-sm w-full">Go to akanjs.com</button>
             </div>
@@ -96,4 +95,3 @@ export default function Page() {
     </div>
   );
 }
-  
