@@ -31,6 +31,7 @@ apps/**/src/schema.gql
 .vite
 dump
 local
+pnpm-lock.yaml
 
 # Xcode
 build/
@@ -85,8 +86,8 @@ local.properties
 **/akan.pkg.json
 **/next.config.ts
 **/next-env.d.ts
-apps/**/lib/__lib/**
-libs/**/lib/__lib/**
+apps/**/lib/__lib
+libs/**/lib/__lib
 apps/*/lib/cnst.ts
 apps/*/lib/dict.ts
 apps/*/lib/db.ts
@@ -95,9 +96,9 @@ apps/*/lib/st.ts
 apps/*/lib/sig.ts
 apps/*/lib/useClient.ts
 apps/*/lib/useServer.ts
-apps/*/lib/*/index.tsx
 apps/*/client.ts
 apps/*/server.ts
+apps/*/lib/*/index.tsx
 libs/*/lib/cnst.ts
 libs/*/lib/dict.ts
 libs/*/lib/db.ts
@@ -106,10 +107,10 @@ libs/*/lib/st.ts
 libs/*/lib/sig.ts
 libs/*/lib/useClient.ts
 libs/*/lib/useServer.ts
-libs/*/lib/*/index.tsx
 libs/*/client.ts
 libs/*/server.ts
 libs/*/index.ts
+libs/*/lib/*/index.tsx
 # **/capacitor.config.ts
 # **/postcss.config.js
 # **/playwright.config.ts
@@ -117,3 +118,4 @@ libs/*/index.ts
 # **/next-env.d.ts
 # **/tsconfig.json
 # **/tsconfig.spec.json
+
