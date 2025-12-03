@@ -1,10 +1,13 @@
-
 import { store } from "@akanjs/store";
 
-import { sig } from "../useClient";
+import * as cnst from "../cnst";
+import { fetch, sig } from "../useClient";
 
 export class InventoryStore extends store(sig.inventory, {
-  // state
+  todaysInventory: null as cnst.Inventory | null,
 }) {
-  // action
+  async loadTodaysInventory() {
+    const todaysInventory = await fetch.getTodaysInventory();
+    this.set({ todaysInventory });
+  }
 }

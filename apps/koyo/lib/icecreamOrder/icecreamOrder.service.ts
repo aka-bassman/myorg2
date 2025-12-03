@@ -1,12 +1,21 @@
+import { dayjs } from "@akanjs/base";
 import { serve } from "@akanjs/service";
 import type { AlarmApi } from "@koyo/nest";
 
 import * as db from "../db";
-import { dayjs } from "@akanjs/base";
+import type * as srv from "../srv";
 
-export class IcecreamOrderService extends serve(db.icecreamOrder, ({ use }) => ({
+export class IcecreamOrderService extends serve(db.icecreamOrder, ({ use, service }) => ({
   alarmApi: use<AlarmApi>(),
+  inventoryService: service<srv.InventoryService>(),
 })) {
+  async _preCreate(data: db.IcecreamOrderInput) {
+    await this.inventoryService.useStocks([
+      { type: "yogurtIcecream", quantity: data.size },
+      ...data.toppings.map((topping) => ({ type: topping, quantity: 1 })),
+    ]);
+    return data;
+  }
   async processIcecreamOrder(icecreamOrderId: string) {
     const icecreamOrder = await this.getIcecreamOrder(icecreamOrderId);
     return await icecreamOrder.process().save();

@@ -19,6 +19,14 @@ export const dictionary = modelDictionary(["en", "ko"])
   .slice<InventorySlice>((fn) => ({
     inPublic: fn(["Inventory In Public", "Inventory 공개"]).arg((t) => ({})),
   }))
-  .endpoint<InventoryEndpoint>((fn) => ({}))
-  .error({})
+  .endpoint<InventoryEndpoint>((fn) => ({
+    getTodaysInventory: fn(["Get Todays Inventory", "오늘 재고 조회"]).desc([
+      "Get today's inventory. If not exists, create it.",
+      "오늘의 인벤토리를 조회합니다. 없으면 생성합니다.",
+    ]),
+  }))
+  .error({
+    stockNotFound: ["Stock not found: {type}", "재고를 찾을 수 없습니다: {type}"],
+    stockNotEnough: ["Stock not enough: {type}, {quantity}", "재고가 부족합니다: {type}, {quantity}"],
+  })
   .translate({});

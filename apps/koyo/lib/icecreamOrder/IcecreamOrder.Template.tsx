@@ -1,6 +1,6 @@
 "use client";
+import { Field, Layout } from "@akanjs/ui";
 import { cnst, st, usePage } from "@koyo/client";
-import { Layout, Field } from "@akanjs/ui";
 
 interface IcecreamOrderEditProps {
   className?: string;
@@ -19,7 +19,7 @@ export const General = ({ className }: IcecreamOrderEditProps) => {
       />
       <Field.MultiToggleSelect
         label={l("icecreamOrder.toppings")}
-        items={cnst.Topping}
+        items={cnst.Topping.map((topping) => ({ label: topping, value: topping, disabled: true }))}
         value={icecreamOrderForm.toppings}
         onChange={st.do.setToppingsOnIcecreamOrder}
       />
