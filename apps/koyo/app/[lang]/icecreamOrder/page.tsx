@@ -30,6 +30,7 @@ export default function Page() {
                 <IcecreamOrder.Template.General />
               </Model.New>
             </div>
+            <IcecreamOrder.Zone.Insight sliceName="icecreamOrderInPublic" />
             <IcecreamOrder.Zone.Card className="space-y-2" init={icecreamOrderInitInPublic} />
           </div>
         );

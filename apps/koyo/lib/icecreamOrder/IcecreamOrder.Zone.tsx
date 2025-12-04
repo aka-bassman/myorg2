@@ -1,4 +1,5 @@
 "use client";
+import { clsx } from "@akanjs/client";
 import { DefaultOf } from "@akanjs/constant";
 import { useInterval } from "@akanjs/next";
 import { ClientInit, ClientView } from "@akanjs/signal";
@@ -50,5 +51,27 @@ export const View = ({ view }: ViewProps) => {
       view={view}
       renderView={(icecreamOrder) => <IcecreamOrder.View.General icecreamOrder={icecreamOrder} />}
     />
+  );
+};
+
+interface InsightProps {
+  className?: string;
+  sliceName?: string;
+}
+export const Insight = ({ className, sliceName = "icecreamOrder" }: InsightProps) => {
+  const icecreamOrderInsight = st.slice[sliceName as "icecreamOrder"].use.icecreamOrderInsight();
+  return (
+    <div className={clsx("flex items-center gap-2", className)}>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.yogurtIcecreamQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.fruitRingQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.oreoQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.strawberryQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.mangoQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.cheeseCubeQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.cornQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.granolaQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.bananaQty}</div>
+      <div className="text-2xl font-bold">{icecreamOrderInsight.figQty}</div>
+    </div>
   );
 };
