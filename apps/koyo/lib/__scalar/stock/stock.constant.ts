@@ -17,5 +17,15 @@ export class StockType extends enumOf("stockType", [
 export class Stock extends via((field) => ({
   type: field(StockType),
   totalQty: field(Int, { default: 0, min: 0 }),
-  usedQty: field(Int, { default: 0, min: 0 }),
-})) {}
+  currentQty: field(Int, { default: 0, min: 0 }),
+})) {
+  getPercentage() {
+    return (this.currentQty / this.totalQty) * 100;
+  }
+  getStatus() {
+    const percentage = this.getPercentage();
+    if (percentage === 0) return "empty";
+    if (percentage < 30) return "low";
+    return "normal";
+  }
+}

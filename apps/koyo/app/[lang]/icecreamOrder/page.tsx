@@ -1,5 +1,5 @@
 import { Load, Model } from "@akanjs/ui";
-import { cnst, fetch, IcecreamOrder, usePage } from "@koyo/client";
+import { cnst, fetch, IcecreamOrder, Inventory, usePage } from "@koyo/client";
 
 export default function Page() {
   const { l } = usePage();
@@ -13,8 +13,13 @@ export default function Page() {
       }}
       render={({ icecreamOrderInitInPublic, icecreamOrderForm }) => {
         return (
-          <div>
-            <div className="flex items-center gap-4 pb-5 text-5xl font-black">
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 text-5xl font-black">
+              <div className="text-5xl font-black">{l("inventory.modelName")}</div>
+              <Inventory.Util.Refill className="absolute top-2 right-2" />
+            </div>
+            <Inventory.Zone.Today />
+            <div className="flex items-center gap-4 text-5xl font-black">
               {l("icecreamOrder.modelName")}
               <Model.New
                 className="btn btn-primary"

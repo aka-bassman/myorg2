@@ -1,17 +1,21 @@
-
 "use client";
-import { Model } from "@akanjs/ui";
-import { usePage } from "@koyo/client";
-import { BiTrash } from "react-icons/bi";
+import { clsx } from "@akanjs/client";
+import { st, usePage } from "@koyo/client";
+import { BiRefresh } from "react-icons/bi";
 
-interface RemoveProps {
-  inventoryId: string;
+interface RefillProps {
+  className?: string;
 }
-export const Remove = ({ inventoryId }: RemoveProps) => {
+export const Refill = ({ className }: RefillProps) => {
   const { l } = usePage();
   return (
-    <Model.Remove modelId={inventoryId} sliceName="inventory">
-      <BiTrash /> {l("base.remove")}
-    </Model.Remove>
+    <button
+      className={clsx("btn btn-primary", className)}
+      onClick={() => {
+        void st.do.refillTodaysInventory();
+      }}
+    >
+      <BiRefresh /> {l("inventory.signal.refillTodaysInventory")}
+    </button>
   );
 };

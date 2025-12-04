@@ -20,4 +20,7 @@ export class InventoryEndpoint extends endpoint(srv.inventory, ({ query }) => ({
   getTodaysInventory: query(cnst.Inventory).exec(async function () {
     return await this.inventoryService.getTodaysInventory();
   }),
+  refillTodaysInventory: query(cnst.Inventory).exec(async function () {
+    return await this.inventoryService.refillTodaysInventory();
+  }),
 })) {}

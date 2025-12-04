@@ -1,8 +1,8 @@
-
 "use client";
-import { Load } from "@akanjs/ui";
-import { cnst, Inventory } from "@koyo/client";
+import { useInterval } from "@akanjs/next";
 import { ClientInit, ClientView } from "@akanjs/signal";
+import { Load, Loading } from "@akanjs/ui";
+import { cnst, Inventory, st } from "@koyo/client";
 
 interface CardProps {
   className?: string;
@@ -26,4 +26,16 @@ interface ViewProps {
 }
 export const View = ({ view }: ViewProps) => {
   return <Load.View view={view} renderView={(inventory) => <Inventory.View.General inventory={inventory} />} />;
+};
+
+interface TodayProps {
+  className?: string;
+}
+export const Today = ({ className }: TodayProps) => {
+  const todaysInventory = st.use.todaysInventory();
+  useInterval(() => {
+    void st.do.loadTodaysInventory();
+  }, 1000);
+  if (!todaysInventory) return <Loading.Area />;
+  return <Inventory.View.General inventory={todaysInventory} />;
 };

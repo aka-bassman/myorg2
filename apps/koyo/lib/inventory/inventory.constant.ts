@@ -1,7 +1,7 @@
 import { dayjs } from "@akanjs/base";
 import { via } from "@akanjs/constant";
 
-import { Stock } from "../__scalar/stock/stock.constant";
+import { Stock, StockType } from "../__scalar/stock/stock.constant";
 
 export class InventoryInput extends via((field) => ({
   stocks: field([Stock]),
@@ -13,6 +13,12 @@ export class InventoryObject extends via(InventoryInput, (field) => ({
 
 export class LightInventory extends via(InventoryObject, [] as const, (resolve) => ({})) {}
 
-export class Inventory extends via(InventoryObject, LightInventory, (resolve) => ({})) {}
+export class Inventory extends via(InventoryObject, LightInventory, (resolve) => ({})) {
+  isInStock(type: StockType["value"], quantity = 1) {
+    const stock = this.stocks.find((stock) => stock.type === type);
+    if (!stock) return false;
+    return stock.currentQty >= quantity;
+  }
+}
 
 export class InventoryInsight extends via(Inventory, (field) => ({})) {}

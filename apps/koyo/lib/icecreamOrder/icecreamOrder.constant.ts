@@ -26,7 +26,7 @@ export class Topping extends enumOf("topping", [
 
 export class IcecreamOrderInput extends via((field) => ({
   serveType: field(ServeType, { default: "forHere" }),
-  size: field(Int),
+  size: field(Int, { min: 50 }),
   toppings: field([Topping]),
   phone: field(String, { validate: isPhoneNumber }),
 })) {}

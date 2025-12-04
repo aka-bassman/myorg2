@@ -10,4 +10,8 @@ export class InventoryStore extends store(sig.inventory, {
     const todaysInventory = await fetch.getTodaysInventory();
     this.set({ todaysInventory });
   }
+  async refillTodaysInventory() {
+    const todaysInventory = await fetch.refillTodaysInventory();
+    this.set({ todaysInventory });
+  }
 }

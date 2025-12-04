@@ -24,9 +24,15 @@ export const dictionary = modelDictionary(["en", "ko"])
       "Get today's inventory. If not exists, create it.",
       "오늘의 인벤토리를 조회합니다. 없으면 생성합니다.",
     ]),
+    refillTodaysInventory: fn(["Refill Todays Inventory", "오늘 재고 채우기"]).desc([
+      "Refill today's inventory.",
+      "오늘의 인벤토리를 채웁니다.",
+    ]),
   }))
   .error({
     stockNotFound: ["Stock not found: {type}", "재고를 찾을 수 없습니다: {type}"],
     stockNotEnough: ["Stock not enough: {type}, {quantity}", "재고가 부족합니다: {type}, {quantity}"],
   })
-  .translate({});
+  .translate({
+    outOfStock: ["Out of stock", "재고가 부족합니다"],
+  });
