@@ -36,6 +36,6 @@ export const Today = ({ className }: TodayProps) => {
   useInterval(() => {
     void st.do.loadTodaysInventory();
   }, 1000);
-  if (!todaysInventory) return <Loading.Area />;
+  if (!todaysInventory) return <Loading.Skeleton />;
   return <Inventory.View.General inventory={todaysInventory} />;
 };

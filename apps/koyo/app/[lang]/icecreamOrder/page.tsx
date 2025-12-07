@@ -19,8 +19,9 @@ export default function Page() {
               <Inventory.Util.Refill className="absolute top-2 right-2" />
             </div>
             <Inventory.Zone.Today />
-            <div className="flex items-center gap-4 text-5xl font-black">
-              {l("icecreamOrder.modelName")}
+            <div className="flex items-center gap-4 font-black">
+              <div className="text-5xl font-bold">{l("icecreamOrder.modelName")}</div>
+              <IcecreamOrder.Util.PublicQueryMaker />
               <Model.New
                 className="btn btn-primary"
                 sliceName="icecreamOrderInPublic"
@@ -30,6 +31,7 @@ export default function Page() {
                 <IcecreamOrder.Template.General />
               </Model.New>
             </div>
+            <IcecreamOrder.Zone.Insight sliceName="icecreamOrderInPublic" />
             <IcecreamOrder.Zone.Card className="space-y-2" init={icecreamOrderInitInPublic} />
           </div>
         );

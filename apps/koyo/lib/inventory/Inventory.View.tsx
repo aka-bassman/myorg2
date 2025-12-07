@@ -1,13 +1,14 @@
 import { dayjs } from "@akanjs/base";
 import { clsx } from "@akanjs/client";
-import { cnst } from "@koyo/client";
+import { cnst, usePage } from "@koyo/client";
 
-interface InventoryViewProps {
+interface GeneralProps {
   className?: string;
   inventory: cnst.Inventory;
 }
 
-export const General = ({ className, inventory }: InventoryViewProps) => {
+export const General = ({ className, inventory }: GeneralProps) => {
+  const { l } = usePage();
   return (
     <div className={clsx("w-full space-y-2 rounded-xl bg-purple-50 p-4", className)}>
       <div className="text-lg font-bold text-purple-900">{dayjs(inventory.at).format("YYYY-MM-DD")}</div>
@@ -32,10 +33,10 @@ export const General = ({ className, inventory }: InventoryViewProps) => {
                     "bg-green-200 text-green-800": status === "normal",
                   })}
                 >
-                  {stock.type}
+                  {l(`stockType.${stock.type}`)}
                 </div>
                 <div
-                  className={clsx("text-2xl font-bold", {
+                  className={clsx("text-lg font-bold", {
                     "text-red-700": status === "empty",
                     "text-yellow-700": status === "low",
                     "text-green-700": status === "normal",

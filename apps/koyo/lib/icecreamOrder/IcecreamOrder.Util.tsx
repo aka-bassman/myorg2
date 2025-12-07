@@ -1,6 +1,7 @@
 "use client";
 import { clsx } from "@akanjs/client";
-import { st, usePage } from "@koyo/client";
+import { Field, Select } from "@akanjs/ui";
+import { cnst, st, usePage } from "@koyo/client";
 
 interface ProcessProps {
   className?: string;
@@ -79,5 +80,23 @@ export const Cancel = ({ className, icecreamOrderId, disabled }: CancelProps) =>
     >
       {l("icecreamOrder.signal.cancelIcecreamOrder")}
     </button>
+  );
+};
+
+interface PublicQueryMakerProps {
+  className?: string;
+}
+export const PublicQueryMaker = ({ className }: PublicQueryMakerProps) => {
+  const [statuses] = st.use.queryArgsOfIcecreamOrderInPublic();
+  return (
+    <Select
+      multiple
+      value={statuses ?? []}
+      className={className}
+      options={cnst.IcecreamOrderStatus}
+      onChange={(statuses) => {
+        void st.do.setQueryArgsOfIcecreamOrderInPublic(statuses);
+      }}
+    />
   );
 };

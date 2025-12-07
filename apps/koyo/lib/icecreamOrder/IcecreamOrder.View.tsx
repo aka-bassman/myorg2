@@ -1,12 +1,12 @@
 import { clsx } from "@akanjs/client";
 import { IcecreamOrder, cnst, usePage } from "@koyo/client";
 
-interface IcecreamOrderViewProps {
+interface GeneralProps {
   className?: string;
   icecreamOrder: cnst.IcecreamOrder;
 }
 
-export const General = ({ className, icecreamOrder }: IcecreamOrderViewProps) => {
+export const General = ({ className, icecreamOrder }: GeneralProps) => {
   const { l } = usePage();
   return (
     <div className={clsx(className, "mx-auto w-full space-y-6 rounded-xl p-8 shadow-lg")}>
@@ -69,6 +69,60 @@ export const General = ({ className, icecreamOrder }: IcecreamOrderViewProps) =>
         <IcecreamOrder.Util.Serve icecreamOrderId={icecreamOrder.id} disabled={icecreamOrder.status !== "processing"} />
         <IcecreamOrder.Util.Finish icecreamOrderId={icecreamOrder.id} disabled={icecreamOrder.status !== "served"} />
         <IcecreamOrder.Util.Cancel icecreamOrderId={icecreamOrder.id} disabled={icecreamOrder.status !== "active"} />
+      </div>
+    </div>
+  );
+};
+
+interface InsightProps {
+  className?: string;
+  icecreamOrderInsight: cnst.IcecreamOrderInsight;
+}
+export const Insight = ({ className, icecreamOrderInsight }: InsightProps) => {
+  const { l } = usePage();
+  return (
+    <div className={clsx("w-full space-y-2 rounded p-4", className)}>
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.yogurtIcecreamQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.yogurtIcecreamQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.fruitRingQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.fruitRingQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.oreoQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.oreoQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.strawberryQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.strawberryQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.mangoQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.mangoQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.cheeseCubeQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.cheeseCubeQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.cornQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.cornQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.granolaQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.granolaQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.bananaQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.bananaQty}</div>
+        </div>
+        <div>
+          <div className="text-xs">{l("icecreamOrder.insight.figQty")}</div>
+          <div className="text-2xl font-bold">{icecreamOrderInsight.figQty}</div>
+        </div>
       </div>
     </div>
   );

@@ -15,9 +15,11 @@ export class IcecreamOrderSlice extends slice(
   srv.icecreamOrder,
   { guards: { root: Public, get: Public, cru: Public } },
   (init) => ({
-    inPublic: init().exec(function () {
-      return this.icecreamOrderService.queryAny();
-    }),
+    inPublic: init()
+      .search("statuses", [cnst.IcecreamOrderStatus])
+      .exec(function (statuses) {
+        return this.icecreamOrderService.queryByStatuses(statuses);
+      }),
     inWaiting: init().exec(function () {
       return this.icecreamOrderService.queryByStatuses(["active", "processing"]);
     }),

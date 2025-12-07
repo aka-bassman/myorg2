@@ -1,4 +1,5 @@
 "use client";
+import { clsx } from "@akanjs/client";
 import { DefaultOf } from "@akanjs/constant";
 import { useInterval } from "@akanjs/next";
 import { ClientInit, ClientView } from "@akanjs/signal";
@@ -51,4 +52,13 @@ export const View = ({ view }: ViewProps) => {
       renderView={(icecreamOrder) => <IcecreamOrder.View.General icecreamOrder={icecreamOrder} />}
     />
   );
+};
+
+interface InsightProps {
+  className?: string;
+  sliceName?: string;
+}
+export const Insight = ({ className, sliceName = "icecreamOrder" }: InsightProps) => {
+  const icecreamOrderInsight = st.slice[sliceName as "icecreamOrder"].use.icecreamOrderInsight();
+  return <IcecreamOrder.View.Insight className={className} icecreamOrderInsight={icecreamOrderInsight} />;
 };
