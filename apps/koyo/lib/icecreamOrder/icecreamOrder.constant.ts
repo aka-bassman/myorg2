@@ -37,7 +37,7 @@ export class IcecreamOrderObject extends via(IcecreamOrderInput, (field) => ({
 
 export class LightIcecreamOrder extends via(
   IcecreamOrderObject,
-  ["size", "toppings", "status"] as const,
+  ["serveType", "size", "toppings", "status"] as const,
   (resolve) => ({})
 ) {}
 

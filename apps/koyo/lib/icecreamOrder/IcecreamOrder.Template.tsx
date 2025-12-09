@@ -20,6 +20,12 @@ export const General = ({ className }: IcecreamOrderEditProps) => {
   return (
     <Layout.Template className={className}>
       <Field.ToggleSelect
+        label={l("icecreamOrder.serveType")}
+        items={cnst.ServeType}
+        value={icecreamOrderForm.serveType}
+        onChange={st.do.setServeTypeOnIcecreamOrder}
+      />
+      <Field.ToggleSelect
         label={l("icecreamOrder.size")}
         items={[50, 100, 200].map((size) => ({
           label: `${size}cc`,

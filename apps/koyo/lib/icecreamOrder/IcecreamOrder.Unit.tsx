@@ -8,13 +8,22 @@ interface CardProps extends ModelProps<"icecreamOrder", cnst.LightIcecreamOrder>
 export const Card = ({ icecreamOrder, showControls = true }: CardProps) => {
   const { l } = usePage();
   return (
-    <div className="group flex h-36 w-full overflow-hidden rounded-xl bg-linear-to-br from-pink-100 via-yellow-50 to-pink-200 px-8 py-6 shadow-md transition-all duration-300 hover:shadow-xl">
-      <div className="flex w-full flex-col justify-center">
+    <div className="group flex w-full flex-wrap justify-between gap-2 overflow-hidden rounded-xl bg-linear-to-br from-pink-100 via-yellow-50 to-pink-200 px-8 py-6 shadow-md transition-all duration-300 hover:shadow-xl">
+      <div className="flex flex-col justify-center">
         <div className="flex items-center gap-2 text-lg font-semibold text-pink-700">
           <span className="inline-block rounded bg-pink-200 px-2 py-1 text-xs font-bold tracking-wider uppercase">
             {l("icecreamOrder.id")}
           </span>
           <span className="ml-2 font-mono text-pink-900">#{icecreamOrder.id.slice(-4)}</span>
+          <span
+            className={clsx("ml-2 rounded px-2 py-1 text-xs font-semibold uppercase", {
+              "bg-pink-300 text-pink-900": icecreamOrder.serveType === "forHere",
+              "bg-yellow-300 text-yellow-900": icecreamOrder.serveType === "takeOut",
+              "bg-blue-200 text-blue-900": icecreamOrder.serveType === "delivery",
+            })}
+          >
+            {l(`serveType.${icecreamOrder.serveType}`)}
+          </span>
         </div>
         <div className="mt-4 flex items-center gap-2">
           <span className="inline-block rounded bg-yellow-200 px-2 py-1 text-xs font-bold tracking-wider text-yellow-800 uppercase">
