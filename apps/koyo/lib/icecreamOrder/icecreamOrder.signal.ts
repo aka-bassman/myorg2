@@ -26,6 +26,11 @@ export class IcecreamOrderSlice extends slice(
     inPickup: init().exec(function () {
       return this.icecreamOrderService.queryByStatuses(["served"]);
     }),
+    inDelivery: init()
+      .search("statuses", [cnst.IcecreamOrderStatus])
+      .exec(function (statuses) {
+        return this.icecreamOrderService.queryByStatuses(statuses, "delivery");
+      }),
   })
 ) {}
 

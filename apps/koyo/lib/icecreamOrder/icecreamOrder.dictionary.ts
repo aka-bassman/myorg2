@@ -71,6 +71,9 @@ export const dictionary = modelDictionary(["en", "ko"])
     })),
     inWaiting: fn(["IcecreamOrder In Waiting", "IcecreamOrder 대기"]).arg((t) => ({})),
     inPickup: fn(["IcecreamOrder In Pickup", "IcecreamOrder 픽업"]).arg((t) => ({})),
+    inDelivery: fn(["IcecreamOrder In Delivery", "IcecreamOrder 배달"]).arg((t) => ({
+      statuses: t(["Statuses", "상태"]).desc(["Statuses of the icecream orders", "아이스크림 주문의 상태"]),
+    })),
   }))
   .endpoint<IcecreamOrderEndpoint>((fn) => ({
     processIcecreamOrder: fn(["Process", "작업시작"])

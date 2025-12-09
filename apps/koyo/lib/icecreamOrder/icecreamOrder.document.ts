@@ -7,7 +7,11 @@ export class IcecreamOrderFilter extends from(cnst.IcecreamOrder, (filter) => ({
   query: {
     byStatuses: filter()
       .opt("statuses", [cnst.IcecreamOrderStatus])
-      .query((statuses) => (statuses?.length ? { status: { $in: statuses } } : {})),
+      .opt("serveType", cnst.ServeType)
+      .query((statuses, serveType) => ({
+        ...(statuses?.length ? { status: { $in: statuses } } : {}),
+        ...(serveType ? { serveType } : {}),
+      })),
   },
   sort: {},
 })) {}
